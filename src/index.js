@@ -17,6 +17,10 @@ const walk = person.walk.bind(person);
 walk();
 */
 
-const square = (number) => number * number;
+//const square = (number) => number * number;
+//console.log(square(5));
 
-console.log(square(5));
+//Array map to render list
+const colors = ["red", "green", "blue"];
+const items = colors.map((color) => `<li>${color}</li>`);
+console.log(items);
