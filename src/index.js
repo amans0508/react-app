@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Teacher } from "./teacher";
 
 const element = <h1>Hello World</h1>;
 ReactDOM.render(element, document.getElementById("root"));
@@ -36,25 +37,6 @@ const combinedSpread = [...array, "1212", ...arraytwo];
 console.log("combined" + combinedSpread); */
 
 //Class is a blueprint to create similar objects
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
-
-  walk() {
-    console.log("walk");
-  }
-}
-
-class Teacher extends Person {
-  constructor(name, degree) {
-    super(name);
-    this.degree = degree;
-  }
-  teach() {
-    console.log("Teach");
-  }
-}
 
 const NewTeacher = new Teacher("Mosh", "MSc");
-console.log(NewTeacher);
+NewTeacher.teach();
