@@ -46,5 +46,15 @@ class Person {
   }
 }
 
-const person = new Person("Aman");
-console.log(person);
+class Teacher extends Person {
+  constructor(name, degree) {
+    super(name);
+    this.degree = degree;
+  }
+  teach() {
+    console.log("Teach");
+  }
+}
+
+const NewTeacher = new Teacher("Mosh", "MSc");
+console.log(NewTeacher);
