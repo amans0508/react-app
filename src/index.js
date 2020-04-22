@@ -35,6 +35,7 @@ const combined = array.concat(arraytwo);
 const combinedSpread = [...array, "1212", ...arraytwo];
 console.log("combined" + combinedSpread); */
 
+//Class is a blueprint to create similar objects
 class Person {
   constructor(name) {
     this.name = name;
